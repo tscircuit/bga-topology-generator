@@ -1,0 +1,12 @@
+node_modules/
+dist/
+
+bun.lock
+
+coverage/
+*.tsbuildinfo
+
+.DS_Store
+
+.agents/
+.codex/
