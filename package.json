@@ -8,12 +8,29 @@
     ".": "./lib/index.ts"
   },
   "scripts": {
+    "start": "cosmos",
     "build": "tsup-node ./lib/index.ts --format esm --dts",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
     "typecheck": "bunx tsc --noEmit"
   },
   "devDependencies": {
-    "@types/bun": "^1.3.14",
+    "@biomejs/biome": "^1.9.4",
+    "@tsci/tscircuit.dataset-srj19-bga-passive-overlays": "git+https://github.com/tscircuit/dataset-srj19.git#5104d03ed72a9090d76ea1f42ae9f4bc439f7534",
+    "@types/react": "19.0.8",
+    "@types/react-dom": "19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@tsci/tscircuit.dataset-srj20-partial-bga-breakouts": "git+https://github.com/tscircuit/dataset-srj20.git#9384fb8f45fb479b97178ddfa42fc74c69afbbec",
+    "@tscircuit/solver-utils": "^0.0.16",
+    "@types/bun": "^1.2.23",
+    "graphics-debug": "0.0.94",
+    "react": "18",
+    "react-cosmos": "^6.2.3",
+    "react-cosmos-plugin-vite": "^6.2.0",
+    "react-dom": "18",
     "tsup": "^8.5.1",
-    "typescript": "^6.0.3"
+    "typescript": "^5.9.3",
+    "vite": "^6.0.11",
+    "vite-tsconfig-paths": "^5.1.4"
   }
 }
